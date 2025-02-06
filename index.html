@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="icon" type="image/x-icon" href="/Users/bhargav/Documents/Portfolio 1/tab-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!---Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <a href="index.html"><i class="fa fa-bold" aria-hidden="true"></i></a>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-text">
+                    <h1>Namaste 🙏</h1>
+                    <h5>I'm <span class="input">UX Designer</span></h5>
+                    <h1>Bhargav Chowdary</h1>
+                    <p> I enjoy solving people's problems by designing meaningful, people-centered solutions.</p>
+
+                    <div class="btn-group">
+                       <a href="/Users/bhargav/Documents/Portfolio 1/Bhargav-Chowdary-Resume.pdf" class="btn active" target="_blank">Download Resume</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/bhargav-chowdary003/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.behance.net/bhargavchowdary1" target="_blank"><i class="fa-brands fa-behance" ></i></a>
+                        <a href="https://dribbble.com/Bhargav003" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                 </div>
+                 <div class="hero-pic">
+                    <img src="/Users/bhargav/Documents/Portfolio 1/hero-pic.png" alt="profile pic">
+                 </div>
+            </div>
+            <!----projects sentions-->
+            <div class="project">
+                <!--<h2>Projects</h2>--->
+             </div>
+             <div class="card-container">
+                <div class="card">
+                    <a href="https://medium.com/@bhargavchowdary003/transforming-memory-rehabilitation-designing-the-memorehab-online-platform-55a8b0d3961b" target="_blank"><img src="/Users/bhargav/Documents/Portfolio 1/memorehab- cover.png" alt="Card Image"></a>
+                    <h3>Memorehab</h3>
+                    <p>Enhancing memory through cognitive rehab exercises.</p>
+                </div>
+                <div class="card">
+                    <a href="https://medium.com/@bhargavchowdary003/hydration-meets-innovation-designing-a-smart-water-bottle-for-a-sustainable-future-mito-23cc85885e66" target="_blank"><img src="/Users/bhargav/Documents/Portfolio 1/mito-cover.png" alt="Card Image"></a>
+                    <h3>Mito</h3>
+                    <p>A smart water bottle that tracks hydration.</p>
+                </div>
+                <div class="card">
+                    <a href="https://medium.com/@bhargavchowdary003/transforming-envirocares-online-presence-a-quick-turnaround-website-redesign-9b5430fcfc27" target="_blank"><img src="/Users/bhargav/Documents/Portfolio 1/envirocare -cover.png" alt="Card Image"></a>
+                    <h3>EnviroCare</h3>
+                    <p>A clean and intuitive website design</p>
+                </div>
+            </div>
+            <!----Horizontal Scrolling-->
+            <hr class="line">
+            <section>
+                <div class="horizontal-slider">
+                  <div class="slider-track">
+                    <div class="slide">Empathise</div>
+                    <div class="slide">Define</div>
+                    <div class="slide">Ideat</div>
+                    <div class="slide">Prototype</div>
+                    <div class="slide">Test</div>
+                    <div class="slide">Empathise</div>
+                    <div class="slide">Define</div>
+                    <div class="slide">Ideat</div>
+                    <div class="slide">Prototype</div>
+                    <div class="slide">Test</div>
+                  </div>
+                </div>
+              </section> 
+              <!-- Reach Out Section -->
+               <hr class="line">
+      <section class="reach-out">
+        <h2>Let's Connect</h2>
+        <p>Open to collabaration or a quick hello - drop a message anytime 😉</p>
+        <p><a href="https://www.linkedin.com/in/bhargav-chowdary003/" target="_blank" class="link">LinkedIn</a> or 
+          <a class="email" href="mailto:bhargavchowdary003@gmail.com">bhargavchowdary003@gmail.com</a>
+        </p>
+      </section>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["UX Designer","Prototype Engineer","UI/CAD Designer","Story Teller"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
