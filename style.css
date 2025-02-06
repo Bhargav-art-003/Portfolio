@@ -1,0 +1,435 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Delius", serif;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    padding-bottom: 50px;
+    background-color: rgb(243, 243, 254);
+}
+.hero-header{
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background: rgb(243, 243, 254);
+}
+.wrapper{
+    width:1200px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width:45px;
+    background-color: rgb(137, 51, 251);
+    border-radius: 50%;
+    color:white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;  
+}
+.logo .logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color:#222;
+}
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top:45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: rgb(137, 51, 251);
+    margin: 5px 0px;
+    width:100%;
+    height:3px;
+    transition: 0.3s;
+    transition-property:  transform, opacity;
+}
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+     color:#222;
+     margin-right: 2.5rem;
+}
+
+nav .navlinks li a:hover{
+    color: rgb(137, 51, 251);
+}
+.navlinks .active{
+    color: rgb(137, 51, 251);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:4rem;
+    gap: 300px;
+}
+.container .hero-pic{
+    width: 350px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+.hero-pic img{
+    height: 100%;
+    width:100%;
+    transition: 0.5s;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+.hero-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text h5{
+    color:#222;
+    font-size: 14px;
+    padding-bottom: 16px;
+}
+.hero-text h5 span{
+    color: rgb(137, 51, 251);
+    font-size: 16px;
+}
+.hero-text h1{
+    color: rgb(137, 51, 251);
+    font-size: 2rem;
+    padding-bottom: 16px;
+}
+.hero-text p{
+    color:#222;
+    line-height: 1.8;
+
+}
+.btn-group{
+    margin:45px 0;
+}
+.btn-group .btn{
+    border-color: #d5d5d5;
+    color:#fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right:7px;
+    border-radius: 30px;
+    border:2px solid #e5e5e5;
+    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+.btn.active{
+    border-color: rgb(137, 51, 251);
+}
+.hero-text .social i{
+    color: #565656;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+    padding: 8px;
+}
+.hero-text .social i:hover{
+    color:rgb(137, 51, 251);
+    transform: rotate(360deg);
+}
+
+/*Project section*/
+
+.project h2{
+    margin-top: 100px;
+    color:rgb(137, 51, 251);
+
+}
+/* Set up the card container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 cards per row */
+    gap: 20px;
+    margin-top: 100px;
+}
+
+/* Style each card */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 0px;
+}
+
+/* Style the image inside the card */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Card Title and Description */
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0 10px;
+    color: #222;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+    text-align: left;
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+/* reach out section*/
+.line{
+    margin-top: 60px;
+    border-top: 1px solid rgb(208, 208, 208);
+}
+.reach-out{
+    text-align: center;
+    margin-top: 40px;
+   }
+.reach-out h2{
+    padding: 16px;
+    color: #222;
+}
+.reach-out p{
+    padding: 8px;
+    color: #222;
+}
+   .link{
+     text-decoration: underline;
+     color: #222
+   }
+   .link:hover{
+     color: rgb(137, 51, 251);
+   }
+   .email{
+    text-decoration: underline;
+    color: #222;
+   }
+   .email:hover{
+    color:rgb(137, 51, 251) ;
+   }
+   /* Horizontal Scroll Section */
+
+.horizontal-slider {
+    overflow: hidden; /* Hides overflowing content */
+    width: 100%;
+    background-color: rgb(243, 243, 254); /* Optional background */
+    margin-top: 64px;
+  }
+  
+  .slider-track {
+    display: flex;
+    width: calc(200px * 5); /* Width = number of items * item width */
+    animation: scroll 20s linear infinite; /* Creates the sliding effect */
+  }
+  
+  .slide {
+    min-width: 200px; /* Width of each item */
+    flex-shrink: 0; /* Prevent items from shrinking */
+    text-align: center;
+    background-color: rgb(243, 243, 254);
+    border-radius: 8px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .slide{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Slides the entire track */
+    }
+  }
+
+  .about-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-text h1{
+    color: rgb(137, 51, 251);
+    font-size: 2rem;
+    padding-bottom: 16px;
+  }
+  .about-text p{
+    line-height: 2;
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  .summary {
+    max-width: 1200px;
+    margin-top: 80px;
+}
+.section {
+    margin-bottom: 40px;
+    display: grid;
+}
+h2 {
+    font-size: 24px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.entry {
+    margin-bottom: 15px;
+}
+.entry h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.entry p {
+    font-size: 14px;
+    color: #666;
+    margin: 2px 0;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skill {
+    background-color: #e6e6e6;
+    color: #222;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Respnosiv design & displaying navbar for small screen */
+@media(max-width:930px)
+{
+    nav .togglebtn{
+        display: initial;
+    }
+    /* for toggle button**/
+    .click {
+        top:45px;
+    }
+    .click span{
+        position: absolute;
+        margin-top:12px
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2)
+    {
+        opacity: 0;
+        margin:0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top:0;
+    }
+    nav .navlinks{
+        position: absolute;
+        top:110px;
+        right:-100%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: white;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navlinks li{
+        display: block;
+    }
+    nav .navlinks li a{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 16px;
+    }
+    nav .navlinks.open{
+        right:0;
+    }
+}
+
+@media(max-width:768px)
+{
+
+    .hero-text h1{
+        text-align: center;
+
+    }
+    .hero-text h5{
+        text-align: center;
+    }
+    .hero-text p{
+        text-align: center;
+    }
+    .btn-group{
+        text-align: center;
+    }
+    .social{
+        text-align: center;
+    }
+    .container{
+        flex-direction: column;
+        padding-top:2rem;
+        gap: 0px;
+    }
+    .hero-text{
+        padding:40px 0px;
+    }
+    .card-container {
+        grid-template-columns: repeat(1, 1fr); /* 2 cards per row on smaller screens */
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+    }
+    .reach-out p{
+        line-height: 2;
+    }
+
+}

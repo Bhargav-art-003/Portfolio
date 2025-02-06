@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="icon" type="image/x-icon" href="/Users/bhargav/Desktop/tab-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!---Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <a href="home.html"><i class="fa fa-bold" aria-hidden="true"></i></a>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="about-text">
+                    <h1>Hello 👋</h1>
+                    <p> I’m Bhargav, a UX designer passionate about crafting intuitive and impactful digital experiences.
+                        <br>Most recently, I worked at Blumetra Solutions, where I focused on designing seamless, user-centered solutions that bridge functionality and aesthetics. My role involved understanding user needs, solving complex problems, and creating designs that enhance usability while aligning with business goals.<br>
+                        I hold a Bachelor's degree in Mechanical Engineering from Jawaharlal Nehru Technological University. My background in engineering helps me approach design with a problem-solving mindset, ensuring thoughtful and efficient solutions.<Br>
+                        Beyond design, I enjoy exploring new ideas, learning from different perspectives, and finding inspiration in everyday interactions. When I’m not working, you’ll find me diving into tech trends, experimenting with creative side projects, or indulging in my love for movies and good food.</p>
+
+                    <div class="btn-group">
+                       <a href="/Users/bhargav/Documents/Portfolio 1/Bhargav-Chowdary-Resume.pdf" class="btn active" target="_blank">Download Resume</a>
+                    </div>
+                 </div>
+                 <div class="hero-pic">
+                    <img src="/Users/bhargav/Documents/Portfolio 1/about-pic.png" alt="profile pic">
+                 </div>
+            </div>
+            <div class="summary">
+        
+                <!-- Experience Section -->
+                <div class="section">
+                    <h2>Experience</h2>
+                    <div class="entry">
+                        <h3>UX Designer - Blumetra Solutions</h3>
+                        <p>09/2022 – Present</p>
+                    </div>
+                    <div class="entry">
+                        <h3>UI/UX Designer - Connect Your Need</h3>
+                        <p>05/2021 – 09/2022</p>
+                    </div>
+                    <div class="entry">
+                        <h3>UI/UX Designer - MEMO</h3>
+                        <p>04/2020 – 05/2021</p>
+                    </div>
+                    <div class="entry">
+                        <h3>CAD Designer/UI Designer - Rudra Labs</h3>
+                        <p>04/2018 – 04/2020</p>
+                    </div>
+                </div>
+        
+                <!-- Education Section -->
+                <div class="section">
+                    <h2>Education</h2>
+                    <div class="entry">
+                        <h3>B.Tech in Mechanical Engineering</h3>
+                        <p>Thandra Paparaya Institute Of Science & Technology (2013 – 2016)</p>
+                    </div>
+                    <div class="entry">
+                        <h3>Diploma in Mechanical Engineering</h3>
+                        <p>Thandra Paparaya Polytechnic College (2010 – 2013)</p>
+                    </div>
+                </div>
+        
+                <!-- Skills Section -->
+                <div class="section">
+                    <h2>Skills</h2>
+                    <div class="skills">
+                        <div class="skill">User Interviews</div>
+                        <div class="skill">Usability Testing</div>
+                        <div class="skill">Information Architecture</div>
+                        <div class="skill">Wireframing</div>
+                        <div class="skill">Rapid Prototyping</div>
+                        <div class="skill">3D Printing</div>
+                        <div class="skill">User Research</div>
+                        <div class="skill">Data Analysis</div>
+                        <div class="skill">Market Research</div>
+                        <div class="skill">Figma (Advanced)</div>
+                        <div class="skill">Adobe XD (Advanced)</div>
+                        <div class="skill">Miro (Intermediate)</div>
+                        <div class="skill">WIX (Intermediate)</div>
+                        <div class="skill">Affinity Designer (Intermediate)</div>
+                        <div class="skill">Illustrator (Intermediate)</div>
+                        <div class="skill">PowerPoint (Advanced)</div>
+                        <div class="skill">Framer (Intermediate)</div>
+                        <div class="skill">ProtoPie (Intermediate)</div>
+                        <div class="skill">HTML/CSS (Basic)</div>
+                        <div class="skill">AutoCAD (Intermediate)</div>
+                        <div class="skill">SolidWorks (Intermediate)</div>
+                        <div class="skill">Notion (Intermediate)</div>
+                    </div>
+                </div>
+            </div>
+              <!-- Reach Out Section -->
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["UX Designer","Prototype Engineer","UI/CAD Designer","Story Teller"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
